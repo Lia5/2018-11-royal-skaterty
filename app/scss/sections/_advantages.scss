@@ -1,0 +1,74 @@
+.advantages {
+    &__item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        &:nth-child(2n) {
+            .advantages__pic {
+                order: 1;
+            }
+        }
+    }
+    &__pic {
+        position: relative;
+        width: 640px;
+        height: 230px;
+        overflow: hidden;
+        border-radius: 44px;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%); 
+            z-index: -1;
+        }
+        &--wrap {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__descr {
+        width: calc(100% - 640px);
+    }
+
+}
+.gradient {
+    // background-color: rgba(231, 230, 231, 0.1);
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBzdG9wLWNvbG9yPSIjMGMwMDEyIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIgb2Zmc2V0PSIwLjEiLz48c3RvcCBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAiIG9mZnNldD0iMC45Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzBjMDAxMiIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,color-stop(0, rgb(12, 0, 18)),color-stop(0.1, rgba(255, 255, 255, 0)),color-stop(0.9, rgba(255, 255, 255, 0)),color-stop(1, rgb(12, 0, 18)));
+    /* Android 2.3 */
+    background-image: -webkit-linear-gradient(top,rgb(12, 0, 18) 0%,rgba(255, 255, 255, 0) 10%,rgba(255, 255, 255, 0) 90%,rgb(12, 0, 18) 100%);
+    /* IE10+ */
+    background-image: linear-gradient(to bottom,rgb(12, 0, 18) 0%,rgba(255, 255, 255, 0) 10%,rgba(255, 255, 255, 0) 90%,rgb(12, 0, 18) 100%);
+    background-image: -ms-linear-gradient(top,rgb(12, 0, 18) 0%,rgba(255, 255, 255, 0) 10%,rgba(255, 255, 255, 0) 90%,rgb(12, 0, 18) 100%);
+}
+ 
+/* IE8- CSS hack */
+@media \0screen\,screen\9 {
+    .gradient {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0c0012",endColorstr="#ff0c0012",GradientType=0);
+    }
+}
+
+.gradient2 {
+    background-color: rgba(243, 242, 243, 0.05);
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjMGMwMDEyIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIgb2Zmc2V0PSIwLjA1Ii8+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIiBvZmZzZXQ9IjAuOTUiLz48c3RvcCBzdG9wLWNvbG9yPSIjMGMwMDEyIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN2c2dnKSIgLz48L3N2Zz4=);
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 0%,color-stop(0, rgb(12, 0, 18)),color-stop(0.05, rgba(255, 255, 255, 0)),color-stop(0.95, rgba(255, 255, 255, 0)),color-stop(1, rgb(12, 0, 18)));
+    /* Android 2.3 */
+    background-image: -webkit-linear-gradient(left,rgb(12, 0, 18) 0%,rgba(255, 255, 255, 0) 5%,rgba(255, 255, 255, 0) 95%,rgb(12, 0, 18) 100%);
+    /* IE10+ */
+    background-image: linear-gradient(to right,rgb(12, 0, 18) 0%,rgba(255, 255, 255, 0) 5%,rgba(255, 255, 255, 0) 95%,rgb(12, 0, 18) 100%);
+    background-image: -ms-linear-gradient(left,rgb(12, 0, 18) 0%,rgba(255, 255, 255, 0) 5%,rgba(255, 255, 255, 0) 95%,rgb(12, 0, 18) 100%);
+}
+ 
+/* IE8- CSS hack */
+@media \0screen\,screen\9 {
+    .gradient2 {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0c0012",endColorstr="#ff0c0012",GradientType=1);
+    }
+}
+
+

@@ -1,0 +1,12 @@
+@import "_mixins/font-face";
+
+
+
+
+@include font-face("GreenLightBoldInline", "../fonts/GreenLightBoldInline/GreenLightBoldInline", 700);
+@include font-face("Oswald", "../fonts/Oswald-ExtraLight/Oswald-ExtraLight", 100);
+@include font-face("Oswald", "../fonts/Oswald-Light/Oswald-Light", 200);
+@include font-face("Oswald", "../fonts/Oswald-Medium/Oswald-Medium", 500);
+@include font-face("Oswald", "../fonts/Oswald-SemiBold/Oswald-SemiBold", 600);
+@include font-face("Oswald", "../fonts/Oswald-Bold/Oswald-Bold", 700);
+@include font-face("YellowPeas-Regular", "../fonts/YellowPeas-Regular/YellowPeas-Regular", 400);
