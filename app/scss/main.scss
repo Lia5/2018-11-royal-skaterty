@@ -104,6 +104,11 @@ ul,li, p {
 	line-height: 46px;
 	letter-spacing: 5.78px;
 	position: relative;
+	
+	span {
+		display: block;
+		max-width: 690px;
+	}
 	&::after {
 		content: "";
 		position: absolute;
@@ -187,6 +192,7 @@ ul,li, p {
 @import "sections/catalog";
 @import "sections/video";
 @import "sections/how";
+@import "sections/answers";
 
 @import "sections/footer"; 
 @import "sections/popup"; 

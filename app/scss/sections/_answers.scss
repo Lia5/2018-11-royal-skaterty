@@ -1,0 +1,43 @@
+
+.accordeon {
+    width: 50%;
+}
+.accordeon-title {
+  cursor: pointer;
+  border: 2px solid $accent;
+  border-image: linear-gradient(75deg, #765b14 0%, #edcc5b 25%, #977619 50%, #edcc5b 75%, #765b14 100%);
+  border-image-slice: 1;
+  margin: 0;
+}
+
+.accordeon-title:after {
+  content: '\003C';
+  float: right;
+  padding-bottom: 2px;
+  font-size: 1.2em;
+  color: #f2f2f2;
+  background-image: linear-gradient(75deg, #765b14 0%, #edcc5b 25%, #977619 50%, #edcc5b 75%, #765b14 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $accent;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: 0.3s;
+}
+
+.accordeon-title.is-opened:after {
+  transform: rotate(90deg);
+}
+
+.accordeon-content {
+  display: none;
+} 
+
+.answers {
+    &__top {
+        margin-top: 18px;
+    }
+}

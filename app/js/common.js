@@ -58,6 +58,24 @@ if(jQuery('.reviews__slider').length) {
     
   });
 }
+//accordeon
+	var contents = $('.accordeon-content');
+  var titles = $('.accordeon-title');
+  titles.on('click',function(){
+    
+    var title = $(this);
+    console.log(title);
+    contents.filter(':visible').slideUp(function(){
+    	$(this).prev('.accordeon-title').removeClass('is-opened');
+    });  
+    
+    var content = title.next('.accordeon-content'); 
+    
+    if (!content.is(':visible')) {
+      content.slideDown(function(){title.addClass('is-opened')});
+    } 
+  });
+
 // if(jQuery('.about-slider').length) {
 //   $('.about-slider').slick({
 //     infinite: true,
