@@ -1,0 +1,23 @@
+section.about
+    .wrap 
+        h2.main-title 
+            span Как с нами связаться
+        .about__page
+            .about__img
+                img(src="img/about.png", alt="about")
+            .about__description
+                .about__text
+                    p Я — Аня.
+                    p Представитель компании Royal Skaterty и, по совместительству, человек, который будет отвечать на ваши заявки, звонки, и помогать с выбором скатерти.
+                    p.text__top Уже 3 года я развиваю компанию и стараюсь придумывать что-то новенькое, чтобы вы могли интересно украсить свой интерьер.
+                    p.text__top Я с удовольствием подскажу, если возникнут какие-то нюансы, так что не стесняйтесь, оставляйте свои вопросы. С радостью свяжусь с вами!
+                .about__form
+                    form(action="#")
+                        .form-line
+                            input(type="text" name="name" id="name" placeholder="имя")
+                        .form-line
+                            input(type="tel" name="tel" id="tel" placeholder="телефон")
+                        .form-line
+                            button.btn Обратный звонок
+                                svg.btn-gradient
+                                    use(xlink:href='img/btn-gradient.svg#btn-gradient') 

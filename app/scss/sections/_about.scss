@@ -1,0 +1,29 @@
+.about {
+    &__page {
+        display: flex;
+    }
+    &__img {
+        width: 50%;
+    }
+    &__description {
+        width: 50%;
+    }
+    &__text {
+        
+    }
+}
+.form-line {
+    text-align: right;
+    input {
+        border: 2px solid $accent;
+        border-image: linear-gradient(75deg, #765b14 0%, #edcc5b 25%, #977619 50%, #edcc5b 75%, #765b14 100%);
+        border-image-slice: 1;
+        width: 100%;
+        background-color: transparent;
+        padding: 19px 24px;
+        font-weight: 400;
+        line-height: 25.59px;
+        letter-spacing: 1.38px;
+        margin-bottom: 13px;
+    }
+}
