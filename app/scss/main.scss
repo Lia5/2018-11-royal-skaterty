@@ -153,7 +153,7 @@ ul,li, p {
 	max-width: 264px;
 	position: relative;
 	display: inline-block;
-	font-size: 12px;
+	font-size: 22px;
 	font-weight: 200;
 	// font-family: $title-font;
 	padding: 19px;
@@ -185,8 +185,8 @@ ul,li, p {
 @import "sections/advantages";
 @import "sections/reviews";
 @import "sections/catalog";
-
-
+@import "sections/video";
+@import "sections/how";
 
 @import "sections/footer"; 
 @import "sections/popup"; 
