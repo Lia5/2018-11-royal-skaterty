@@ -9,39 +9,44 @@ $(function() {
 
 
 
-// //BEGIN popup global
-// function popupbg() {
-//     $('.popup-bg').css('height', 200 + $(window).height());
-// }
+//BEGIN popup global
+function popupbg() {
+    $('.popup-bg').css('height', 200 + $(window).height());
+}
 
-// $(window).resize(popupbg());
+$(window).resize(popupbg());
 
-// popupbg();
+popupbg();
 
-// function popups(elem, popup) {
+function popups(elem, popup) {
 
-//     elem.click(function(e) {
-//         $('.popup-bg').addClass('active');
-//         $('body').addClass('active');
-//         popup.addClass('active');
-//         $('body').addClass('active');
-//         // e.preventDefault();
-//     })
+    elem.click(function(e) {
+        $('.popup-bg').addClass('active');
+        $('body').addClass('active');
+        popup.addClass('active');
+        $('body').addClass('active');
+        // e.preventDefault();
+    })
 
-//     $('.popup-bg').click(function() {
-//         $(this).removeClass('active');
-//         popup.removeClass('active');
-//         $('body').removeClass('active');
-//     })
+    $('.popup-bg').click(function() {
+        $(this).removeClass('active');
+        popup.removeClass('active');
+        $('body').removeClass('active');
+    })
 
-//     $('.popup-close').click(function() {
-//         $('.popup-bg').removeClass('active');
-//         popup.removeClass('active');
-//         $('body').removeClass('active');
-//     })
-// }
+    $('.popup-close').click(function() {
+        $('.popup-bg').removeClass('active');
+        popup.removeClass('active');
+        $('body').removeClass('active');
+    })
+}
 
-// popups($('.global-form'), $('.globalform'));
+popups($('.all-form'), $('.allform'));
+popups($('.catalog-form1'), $('.catalogform1'));
+popups($('.catalog-form2'), $('.catalogform2'));
+popups($('.catalog-form3'), $('.catalogform3'));
+popups($('.catalog-form4'), $('.catalogform4'));
+
 
 //slider 
 if(jQuery('.reviews__slider').length) {
@@ -72,7 +77,8 @@ if(jQuery('.reviews__slider').length) {
       content.slideDown(function(){title.addClass('is-opened')});
     } 
   });
-
+  
+//navigation menu
   var linkNav = document.querySelectorAll('.menu__items [href^="#"]'), //выбираем все ссылки к якорю на странице
   V = 0.25; // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
 for (var i = 0; i < linkNav.length; i++) {
