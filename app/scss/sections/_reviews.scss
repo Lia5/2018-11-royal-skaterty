@@ -1,13 +1,32 @@
 .reviews {
+    padding-bottom: 50px;
+    &__slider {
+        max-width: 916px;
+        margin: 94px auto;
+    }
     &__item {
         display: flex;
         align-items: center;
-        padding: 114px;
+        justify-content: space-between;
+        padding: 0 95px;
     }
     &__pic {
         position: relative;
         padding: 5px;
         background-image: linear-gradient(75deg, #765b14 0%, #edcc5b 25%, #977619 50%, #edcc5b 75%, #765b14 100%);
+    }
+    &__bottom {
+        font-size: 21px;
+        max-width: 401px;
+        text-align: center;
+        margin: 0 auto;
+        p {
+            letter-spacing: 1px;
+            line-height: 1;
+        }
+    }
+    .btn {
+        margin-top: 37px;
     }
 }
 .review-border1 {

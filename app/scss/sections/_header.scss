@@ -1,6 +1,7 @@
 //header
 .header {
    .wrap {
+       padding: 28px 151px 0;
        display: flex;
        justify-content: space-between;
        position: relative;
@@ -35,16 +36,32 @@
 .menu__items {
     display: flex;
     a {
-        padding: 10px;
+        display: block;
+        min-width: 102px;
+        text-align: right;
+        transition: 0.3s;
+
         &:hover {
             color: #e6c454;
+            font-weight: 500;
         }
+        
     }
+    li:last-child a {
+            padding-right: 0;
+        }
 }
 .social {
+    margin-bottom: 25px;
     a {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+    }
+    span {
+        margin-right: 15px;
+    }
+    &:first-child {
+        
     }
 }

@@ -1,4 +1,5 @@
 .advantages {
+    padding-bottom: 48px;
     &__item {
         display: flex;
         align-items: center;
@@ -6,13 +7,22 @@
         &:nth-child(2n) {
             .advantages__pic {
                 order: 1;
+
+            }
+            .advantages__descr {
+                padding-left: 127px;
+            }
+        }
+        &:nth-child(2n+1) {
+            .advantages__descr {
+                margin-left: -32px;
             }
         }
     }
     &__pic {
         position: relative;
         width: 640px;
-        height: 230px;
+        height: 200px;
         overflow: hidden;
         border-radius: 44px;
         img {
@@ -30,6 +40,10 @@
     }
     &__descr {
         width: calc(100% - 640px);
+        position: relative;
+    }
+    &__text {
+        padding-top: 8px;
     }
 
 }

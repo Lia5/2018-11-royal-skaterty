@@ -11,7 +11,7 @@
     }
     &__title {
         position: absolute;
-        top: 0;
+        top: 33px;
         left: 0;
         width: 80%;
         left: 50%;
@@ -22,5 +22,8 @@
         color: rgba(0, 0, 0, 0.5);
         background-image: linear-gradient(75deg, #765b14 0%, #edcc5b 25%, #977619 50%, #edcc5b 75%, #765b14 100%);
 
+    }
+    .main-title {
+        margin-bottom: 52px;
     }
 }
