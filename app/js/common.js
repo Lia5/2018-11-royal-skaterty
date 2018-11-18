@@ -47,6 +47,21 @@ popups($('.catalog-form2'), $('.catalogform2'));
 popups($('.catalog-form3'), $('.catalogform3'));
 popups($('.catalog-form4'), $('.catalogform4'));
 
+//menu
+$(".menu-toggle").on('click', function() {
+  $(this).toggleClass("on");
+  $('.main-menu').toggleClass("show");
+  $('.logo-mob').toggleClass("none");
+  $('body').toggleClass('overfloy');
+});
+
+jQuery(window).width() <= 767 && $(".menu-items li").on('click', function() {
+  $('.menu-toggle').removeClass("on");
+  $('.main-menu').removeClass("show");
+  $('.logo-mob').removeClass("none");
+  $('body').removeClass('overfloy');
+});
+
 
 //slider 
 if(jQuery('.reviews__slider').length) {
