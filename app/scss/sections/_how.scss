@@ -1,4 +1,10 @@
 .how {
+    background-image: url("../img/how-bg.png");
+    background-size: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
     padding-bottom: 52px;
     &__items {
         display: flex;
@@ -44,12 +50,5 @@
         margin: 0 auto;
         display: block;
     }
-    .wrap {
-        background-image: url("../img/how-bg.png");
-        background-size: 100%;
-        background-size: 61%;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: top;
-      }
+
 }

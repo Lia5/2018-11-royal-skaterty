@@ -1,4 +1,10 @@
 .reviews {
+    background-image: url("../img/how-bg.png");
+    background-size: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
     padding-bottom: 50px;
     &__slider {
         max-width: 916px;

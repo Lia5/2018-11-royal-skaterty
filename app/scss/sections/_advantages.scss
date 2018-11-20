@@ -67,15 +67,15 @@
 }
 
 .gradient2 {
-    background-color: rgba(243, 242, 243, 0.05);
+    background-color: rgba(216, 214, 217, 0.16);
     /* IE9, iOS 3.2+ */
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjMGMwMDEyIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIgb2Zmc2V0PSIwLjA1Ii8+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIiBvZmZzZXQ9IjAuOTUiLz48c3RvcCBzdG9wLWNvbG9yPSIjMGMwMDEyIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN2c2dnKSIgLz48L3N2Zz4=);
-    background-image: -webkit-gradient(linear, 0% 0%, 100% 0%,color-stop(0, rgb(12, 0, 18)),color-stop(0.05, rgba(255, 255, 255, 0)),color-stop(0.95, rgba(255, 255, 255, 0)),color-stop(1, rgb(12, 0, 18)));
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjMGMwMDEyIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMC4wMSIvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIgb2Zmc2V0PSIwLjE1Ii8+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIiBvZmZzZXQ9IjAuODUiLz48c3RvcCBzdG9wLWNvbG9yPSIjMGMwMDEyIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMC45OSIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN2c2dnKSIgLz48L3N2Zz4=);
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 0%,color-stop(0.01, rgb(12, 0, 18)),color-stop(0.15, rgba(255, 255, 255, 0)),color-stop(0.85, rgba(255, 255, 255, 0)),color-stop(0.99, rgb(12, 0, 18)));
     /* Android 2.3 */
-    background-image: -webkit-linear-gradient(left,rgb(12, 0, 18) 0%,rgba(255, 255, 255, 0) 5%,rgba(255, 255, 255, 0) 95%,rgb(12, 0, 18) 100%);
+    background-image: -webkit-linear-gradient(left,rgb(12, 0, 18) 1%,rgba(255, 255, 255, 0) 15%,rgba(255, 255, 255, 0) 85%,rgb(12, 0, 18) 99%);
     /* IE10+ */
-    background-image: linear-gradient(to right,rgb(12, 0, 18) 0%,rgba(255, 255, 255, 0) 5%,rgba(255, 255, 255, 0) 95%,rgb(12, 0, 18) 100%);
-    background-image: -ms-linear-gradient(left,rgb(12, 0, 18) 0%,rgba(255, 255, 255, 0) 5%,rgba(255, 255, 255, 0) 95%,rgb(12, 0, 18) 100%);
+    background-image: linear-gradient(to right,rgb(12, 0, 18) 1%,rgba(255, 255, 255, 0) 15%,rgba(255, 255, 255, 0) 85%,rgb(12, 0, 18) 99%);
+    background-image: -ms-linear-gradient(left,rgb(12, 0, 18) 1%,rgba(255, 255, 255, 0) 15%,rgba(255, 255, 255, 0) 85%,rgb(12, 0, 18) 99%);
 }
  
 /* IE8- CSS hack */
@@ -84,5 +84,6 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0c0012",endColorstr="#ff0c0012",GradientType=1);
     }
 }
+
 
 

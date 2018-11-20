@@ -6,9 +6,6 @@
         span {
             max-width: 553px;
         }
-        &:after {
-            width: 432px;
-        }
     }
     .advantages {
         &__pic {
@@ -42,11 +39,23 @@
     }
 }
 @media only screen and (max-width: 1023px) {
+    section:after { 
+        content: none;
+    }
+    .main-title:after {
+        content: "";
+		position: absolute;
+		right: 0;
+		border-top-left-radius: 100%;
+		border-bottom-left-radius: 100%;
+		width: 44%;
+		height: 6px;
+		background-image: linear-gradient(81deg, #edcc5b 0%, #765b14 17%, #edcc5b 33.5%, #977619 50%, #edcc5b 66.5%, #765b14 83%, #edcc5b 100%);
+        top: 50%;
+        transform: translate(0, -50%);
+    }
     .main-title {
         font-size: 35px;
-        &:after {
-            width: 333px;
-        }
     }
     .header .wrap {
         padding: 28px 20px 0;
@@ -93,7 +102,8 @@
 
 }
 @media only screen and (max-width: 767px) {
-    .main-title::after {
+    .main-title:after {
+		width: 80%;
         top: auto;
         transform: none;
         bottom: -17px;
