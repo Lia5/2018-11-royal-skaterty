@@ -73,10 +73,13 @@
         width: calc(100% - 427px);
     }
     .advantages__item:nth-child(2n+1) .advantages__descr {
-        margin-left: 0;
+        margin-left: 40px;
     }
     .advantages__item:nth-child(2n) .advantages__descr {
         padding-left: 0;
+    }
+    .advantages__item:nth-child(2n) .advantages__pic {
+        margin-left: 40px;
     }
     .catalog__title {
         font-size: 27px;
@@ -173,6 +176,12 @@
     .advantages__descr {
         width: 100%;
         margin-top: 20px;
+    }
+    .advantages__item:nth-child(2n+1) .advantages__descr {
+        margin-left: 0;
+    }
+    .advantages__item:nth-child(2n) .advantages__pic {
+        margin-left: 0;
     }
     .advantages__item:nth-child(2n) .advantages__pic {
         order: 0;

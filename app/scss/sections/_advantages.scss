@@ -7,6 +7,7 @@
         &:nth-child(2n) {
             .advantages__pic {
                 order: 1;
+                margin-left: 140px;
 
             }
             .advantages__descr {
@@ -24,7 +25,6 @@
         width: 531px;
         height: 229px;
         overflow: hidden;
-        border-radius: 44px;
         img {
             position: absolute;
             top: 50%;
