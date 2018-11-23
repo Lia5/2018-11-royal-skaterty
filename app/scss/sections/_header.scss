@@ -10,10 +10,10 @@
            position: absolute;
            bottom: -3px;
            left: 0;
-           left: 50%;
+           left: 55%;
            margin-right: -50%;
            transform: translate(-50%, 0);
-           width: 80%;
+           width: 67%;
            height: 1px;
            border-radius: 42%;
            background-image: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.35), transparent);
@@ -27,16 +27,16 @@
         // background: rgb(229, 219, 242) url('../img/header-bg.jpg') center top;
         // background-repeat: no-repeat;
         // background-size: cover;
-        .header__img {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            img {
-                height: 100%;
-            }
-        }
+        // .header__img {
+        //     position: absolute;
+        //     top: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     right: 0;
+        //     img {
+        //         height: 100%;
+        //     }
+        // }
     }
 }
 .gradient-header {
@@ -60,10 +60,14 @@
 
 
 .logo {
-    max-width: 184px;
+    max-width: 80px;
+    position: absolute;
 }
 .img__icon {
     width: 22px;
+}
+.header__nav {
+    margin-left: auto;
 }
 .menu__items {
     display: flex;

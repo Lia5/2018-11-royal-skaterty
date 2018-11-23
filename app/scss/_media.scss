@@ -63,9 +63,6 @@
     .social {
         margin-bottom: 18px;
     }
-    .logo {
-        max-width: 149px;
-    }
     .home h1 {
         font-size: 36px;
     }
@@ -124,6 +121,7 @@
             text-align: center;
             padding: 10px;
             font-size: 25px;
+            color: #fff;
         }
     }
     .main-menu.show {
@@ -162,7 +160,8 @@
         margin-bottom: 8px;
     }
     .logo {
-        max-width: 100px;
+        max-width: 64px;
+        top: 0;
     }
     .advantages__item {
         flex-wrap: wrap;

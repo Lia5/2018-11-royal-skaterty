@@ -1,0 +1,68 @@
+.reviews {
+    background-image: url("../img/how-bg.png");
+    background-size: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    padding-bottom: 50px;
+    &__slider {
+        max-width: 916px;
+        margin: 0 auto;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 95px;
+    }
+    &__pic {
+        position: relative;
+        padding: 5px;
+        margin: 0 auto;
+        background-image: linear-gradient(75deg, #765b14 0%, #edcc5b 25%, #977619 50%, #edcc5b 75%, #765b14 100%);
+    }
+    &__bottom {
+        font-size: 21px;
+        max-width: 401px;
+        text-align: center;
+        margin: 0 auto;
+        p {
+            letter-spacing: 1px;
+            line-height: 1;
+        }
+    }
+    .btn {
+        margin-top: 37px;
+    }
+    &__tel {
+        img {
+            border-radius: 27px;
+        }
+    }
+}
+
+
+//slick
+.slick-arrow {
+    padding: 0;
+    width: 33px;
+    height: 61px;
+    cursor: pointer;
+    fill: rgb(237, 204, 91);
+    fill: linear-gradient(75deg, #765b14 0%, #edcc5b 25%, #977619 50%, #edcc5b 75%, #765b14 100%);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); 
+    bottom: -80px;
+    right: 0;
+    z-index: 2;
+    border-image-slice: 1;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+.svg-left {
+    right: auto;
+    left: 0;
+}

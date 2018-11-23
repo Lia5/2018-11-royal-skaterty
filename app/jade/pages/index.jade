@@ -8,11 +8,20 @@ html(lang='ru')
 		include ../common/popup
 
 		.header__wrap
-			.header__img
-				img(src="img/header-bg.jpg", alt="skaterty")
+			.header__overlay
+			.header__video
+				video(poster='video/demo.png' autoplay loop muted)
+					source(src='video/demo.mp4', type='video/mp4')
+					source(src='video/demo.webm', type='video/webm')
+					// source(src='demo.ogv', type='video/ogg')
+					object
+						embed(src='video/demo.webm', type='application/x-shockwave-flash', allowfullscreen='false', allowscriptaccess='always')
+					| Формат не поддерживается
 			include ../common/header
 			include ../common/home
+		include ../common/works
 		include ../common/advantages
+
 		include ../common/reviews
 		include ../common/catalog
 		include ../common/video
