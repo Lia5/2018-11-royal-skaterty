@@ -1,15 +1,17 @@
 .about {
+    padding-bottom: 40px;
     &__page {
         display: flex;
+        padding-left: 122px;
     }
     &__img {
-        width: 47%;
+        width: 42%;
         img {
-            width: 95%;
+            width: 90%;
         }
     }
     &__description {
-        width: 38%;
+        width: 50%;
     }
     .main-title {
         margin-bottom: 47px;
