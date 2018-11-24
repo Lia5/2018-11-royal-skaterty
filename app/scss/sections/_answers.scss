@@ -53,7 +53,11 @@
 } 
 
 .answers {
-
+      background-image: url("../img/answers-bg.png");
+      // background-size: 68%;
+      // background-repeat-x: no-repeat;
+      background-position-x: center;
+      background-position-y: top;
 
     &__top {
         margin-top: 18px;
@@ -63,11 +67,7 @@
     }
     .wrap {
       padding-bottom: 35px;
-      background-image: url("../img/answers-bg.png");
-      background-size: 68%;
-      background-repeat-x: no-repeat;
-      background-position-x: center;
-      background-position-y: top;
+      
     }
 }
 .text__top {

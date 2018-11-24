@@ -17,9 +17,10 @@ body.active {
     }
 }
 .globalform {
+    color: #e5dbf2;
     width: 100%;
     max-width: 578px;
-    background-color: rgba(12, 0, 18, 0.95);
+    background-color: #3b2944;
     cursor: auto;
     display: block;
     margin: 0 auto;
@@ -47,6 +48,9 @@ body.active {
     &.active {
         top: 50%;
         opacity: 1;
+    }
+    ::placeholder {
+        color: #e5dbf2;
     }
 }
 .popup-close {

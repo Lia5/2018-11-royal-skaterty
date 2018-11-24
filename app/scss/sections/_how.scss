@@ -1,10 +1,9 @@
 .how {
-    background-image: url("../img/how-bg.png");
-    background-size: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: top;
+    // background-image: url("../img/how-bg.png");
+    // background-size: 100%;
+    // background-size: contain;
+    // background-position-x: center;
+    // background-position-y: top;
     padding-bottom: 52px;
     &__items {
         display: flex;
@@ -23,20 +22,6 @@
             width: 80px;
         }
     }
-    // &__number {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     font-size: 67px;
-    //     font-weight: 200;
-    //     filter: blur(5px);
-    //     background-image: linear-gradient(75deg, #765b14 0%, #edcc5b 25%, #977619 50%, #edcc5b 75%, #765b14 100%);
-    //     -webkit-background-clip: text;
-    //     -webkit-text-fill-color: transparent;
-    //     color: $accent;
-    //     display: table;
-    //     letter-spacing: 3px;
-    // }
     &__text {
         font-size: 16px;
         font-weight: 300;
