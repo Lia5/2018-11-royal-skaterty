@@ -7,6 +7,15 @@
             max-width: 553px;
         }
     }
+    .home {
+        h1 {
+            text-align: center;
+            margin-top: 12vh;
+        }
+        .btn {
+            margin: auto;
+        }
+    }
     .advantages {
         &__pic {
             width: 500px;
@@ -125,6 +134,10 @@
             padding: 10px;
             font-size: 25px;
             color: #fff;
+            
+        }
+        li:last-child a {
+            padding-right: 10px;
         }
     }
     .main-menu.show {
@@ -225,14 +238,25 @@
     .accordeon {
         width: 100%;
     }
+    .works__item {
+        padding: 0 30px;
+    }
     .about__page {
         flex-wrap: wrap;
+        padding-left: 0;
     }
     .about__img {
         width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+         img {
+            width: 100%;
+        }
     }
     .about__description {
         width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
     }
     .footer .wrap {
         flex-direction: column;
@@ -250,12 +274,25 @@
         max-height: calc(100vh - 51px);
     }
     .globalform .wrap {
-        max-height: calc(100vh - 48px);
+        max-height: calc(100vh - 60px);
         padding-left: 20px;
         padding-right: 20px;
     }
     .cross {
         right: 27px;
+        top: -23px;
+        width: 30px;
+        height: 30px;
+        &-line {
+            width: 33px;
+        }
+        &--topper {
+            top: 12px;
+        }
+        &--bottom {
+            top: 10px;
+        }
+
     }
 }
 @media only screen and (max-width: 479px) {
@@ -267,8 +304,10 @@
     }
     .main-title {
         margin-bottom: 34px;
+        text-align: center;
         &:after {
-            width: 90%;
+            // width: 90%;
+            content: none;
         }
     }
     .advantages__descr {
@@ -278,7 +317,7 @@
         padding-bottom: 10px;
     }
     .catalog__item {
-        width: 100%;
+        // width: 100%;
         max-height: 450px;
         overflow: hidden;
         
@@ -288,7 +327,14 @@
         top: 50%;
     }
     .catalog__title {
-        font-size: 35px;
+        font-size: 22px;
+    }
+    .how__item {
+        padding-left: 0;
+    }
+    .how__pic {
+        margin: 0 auto 20px;
+        width: 94px;
     }
     .footer .wrap {
         padding: 10px;

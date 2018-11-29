@@ -46,21 +46,33 @@ popups($('.catalog-form1'), $('.catalogform1'));
 popups($('.catalog-form2'), $('.catalogform2'));
 popups($('.catalog-form3'), $('.catalogform3'));
 popups($('.catalog-form4'), $('.catalogform4'));
-
+   
 //menu
 $(".menu-toggle").on('click', function() {
   $(this).toggleClass("on");
   $('.main-menu').toggleClass("show");
-  $('.logo-mob').toggleClass("none");
-  $('body').toggleClass('overfloy');
+//   $('body').toggleClass('overfloy');
 });
 
-jQuery(window).width() <= 767 && $(".menu-items li").on('click', function() {
+jQuery(window).width() <= 767 && $(".menu__items li").on('click', function() {
+    console.log(this);
   $('.menu-toggle').removeClass("on");
   $('.main-menu').removeClass("show");
-  $('.logo-mob').removeClass("none");
-  $('body').removeClass('overfloy');
+//   $('body').removeClass('overfloy');
 });
+
+
+
+$(document).mouseup(function (e){ // событие клика по веб-документу
+    var div = $(".menu"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        // div.hide(); // скрываем его
+        $('.menu-toggle').removeClass("on");
+        $('.main-menu').removeClass("show");
+    }
+});
+
 
 
 //slider 
